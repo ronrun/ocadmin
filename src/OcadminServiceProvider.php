@@ -22,13 +22,6 @@ class OcadminServiceProvider  extends ServiceProvider
 
         // Routes
         $this->loadRoutesFrom(__DIR__.'/../routes/admin.php');
-        
-        // Log::info('LaravelOpencartAdminServiceProvider boot() loaded.');
-
-        // // 如果有 routes、config、migrations，可以在這裡載入
-        // $this->publishes([
-        //     __DIR__ . '/../config/opencartadmin.php' => config_path('opencartadmin.php'),
-        // ], 'config');
 
         // 發布資源
         $this->publishes([
